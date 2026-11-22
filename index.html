@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Eatery - Experience contemporary dining with handcrafted culinary favorites, warm hospitality, and an unforgettable ambiance.">
+  <meta name="keywords" content="Eatery, restaurant, fine dining, gourmet burger, alfredo pasta, grilled chicken, Cairo dining">
+  <meta name="author" content="Eatery Culinary Team">
+  <title>Eatery | Modern Culinary Experience &amp; Fine Dining</title>
+  
+  <!-- Google Fonts: Playfair Display (Serif headings) & Plus Jakarta Sans (Clean body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ==========================================
+       A. NAVIGATION HEADER
+       ========================================== -->
+  <header class="site-header" id="header">
+    <div class="header-container container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Eatery Home">
+        <span class="logo-mark">E</span>
+        <div class="logo-text">
+          <span class="brand-name">Eatery</span>
+          <span class="brand-tagline">Artisanal Kitchen</span>
+        </div>
+      </a>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="primary-nav" id="primary-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#top-meals" class="nav-link">Top Meals</a></li>
+          <li class="nav-item"><a href="#best-seller" class="nav-link">Best Seller</a></li>
+          <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Button (Desktop) -->
+      <div class="header-cta">
+        <a href="#contact" class="btn btn-outline-nav">Reserve a Table</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         B. HERO SECTION
+         ========================================== -->
+    <section class="hero-section" id="home" aria-label="Welcome to Eatery">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <div class="hero-badge">Exquisite Culinary Craftsmanship</div>
+        <h1 class="hero-title">Welcome to Eatery</h1>
+        <p class="hero-description">
+          Where culinary passion meets timeless elegance. Immerse your senses in handcrafted dishes prepared with the freshest farm-to-table ingredients, seasoned to perfection, and served in a warm, welcoming atmosphere.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">View Menu</a>
+          <a href="#contact" class="btn btn-secondary">Book a Table</a>
+        </div>
+
+        <!-- Highlights Bar -->
+        <div class="hero-features">
+          <div class="feature-item">
+            <span class="feature-icon">&#9733;</span>
+            <span class="feature-text">Chef-Curated Specialties</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">&#10003;</span>
+            <span class="feature-text">100% Fresh Daily Ingredients</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">&#9829;</span>
+            <span class="feature-text">Cozy &amp; Sophisticated Ambiance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         C. TOP 3 MEALS SECTION
+         ========================================== -->
+    <section class="top-meals-section section-padding" id="top-meals" aria-labelledby="top-meals-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Chef's Recommendations</span>
+          <h2 class="section-title" id="top-meals-heading">Top 3 Meals</h2>
+          <div class="title-divider"></div>
+          <p class="section-desc">
+            Voted by our patrons and praised by culinary critics, these signature creations define our commitment to gastronomic excellence.
+          </p>
+        </div>
+
+        <!-- Semantic Ordered List of Top 3 Meals -->
+        <ol class="top-meals-list">
+          <!-- Meal 1: Grilled Chicken Platter -->
+          <li class="meal-card">
+            <div class="meal-card-rank">
+              <span class="rank-badge" aria-label="Rank 1">01</span>
+            </div>
+            <div class="meal-image-wrapper">
+              <img src="assets/other-images/grilled-chicken.jpg" alt="Grilled Chicken Platter served with herb-roasted vegetables and seasoned basmati rice" width="400" height="280" loading="lazy">
+              <span class="meal-badge">Chef's Choice</span>
+            </div>
+            <div class="meal-card-body">
+              <div class="meal-card-header">
+                <h3 class="meal-title">Grilled Chicken Platter</h3>
+                <span class="meal-price">EGP 180</span>
+              </div>
+              <p class="meal-description">
+                Tender char-grilled marinated chicken breast basted with fresh rosemary, garlic, and citrus olive oil. Served over fragrant seasoned basmati rice accompanied by fire-roasted garden vegetables and house garlic dip.
+              </p>
+              <ul class="meal-tags" aria-label="Dish tags">
+                <li>Free-Range Poultry</li>
+                <li>Gluten-Conscious</li>
+                <li>High Protein</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Meal 2: Classic Beef Burger -->
+          <li class="meal-card">
+            <div class="meal-card-rank">
+              <span class="rank-badge" aria-label="Rank 2">02</span>
+            </div>
+            <div class="meal-image-wrapper">
+              <img src="assets/other-images/beef-burger.jpg" alt="Classic Beef Burger featuring prime Angus patty, melted cheddar, and crisp lettuce on toasted brioche" width="400" height="280" loading="lazy">
+              <span class="meal-badge highlight">Guest Favorite</span>
+            </div>
+            <div class="meal-card-body">
+              <div class="meal-card-header">
+                <h3 class="meal-title">Classic Beef Burger</h3>
+                <span class="meal-price">EGP 150</span>
+              </div>
+              <p class="meal-description">
+                200g of freshly ground prime Black Angus beef grilled to juicy perfection, topped with aged Vermont cheddar, caramelized balsamic onions, crisp lettuce, and signature Eatery truffle aioli on a toasted artisan brioche bun.
+              </p>
+              <ul class="meal-tags" aria-label="Dish tags">
+                <li>100% Angus Beef</li>
+                <li>Artisan Brioche</li>
+                <li>Hand-Cut Fries</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Meal 3: Creamy Alfredo Pasta -->
+          <li class="meal-card">
+            <div class="meal-card-rank">
+              <span class="rank-badge" aria-label="Rank 3">03</span>
+            </div>
+            <div class="meal-image-wrapper">
+              <img src="assets/other-images/alfredo-pasta.jpg" alt="Creamy Alfredo Pasta with freshly tossed fettuccine in rich parmesan cream sauce" width="400" height="280" loading="lazy">
+              <span class="meal-badge">Classic Italian</span>
+            </div>
+            <div class="meal-card-body">
+              <div class="meal-card-header">
+                <h3 class="meal-title">Creamy Alfredo Pasta</h3>
+                <span class="meal-price">EGP 135</span>
+              </div>
+              <p class="meal-description">
+                Handmade bronze-die fettuccine pasta swirled in an authentic velvety Parmigiano-Reggiano and cultured butter emulsion, infused with roasted garlic, cracked black pepper, and garnished with fresh flat-leaf Italian parsley.
+              </p>
+              <ul class="meal-tags" aria-label="Dish tags">
+                <li>Handmade Pasta</li>
+                <li>24-Mo. Parmesan</li>
+                <li>Vegetarian</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         D. BEST SELLER SECTION
+         ========================================== -->
+    <section class="best-seller-section section-padding" id="best-seller" aria-labelledby="best-seller-heading">
+      <div class="container">
+        <div class="best-seller-wrapper">
+          <!-- Best Seller Image (Fixed dimensions required by spec) -->
+          <div class="best-seller-media">
+            <div class="image-frame">
+              <img 
+                src="assets/best-seller.jpg" 
+                alt="Eatery award-winning Classic Beef Burger with melted cheddar, fresh toppings, and golden hand-cut fries" 
+                width="600" 
+                height="450" 
+                class="best-seller-img"
+              >
+              <div class="ribbon-wrapper">
+                <span class="ribbon">#1 Best Seller</span>
+              </div>
+            </div>
+            <div class="media-caption">
+              <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <strong>Over 2,500+ Burgers Served Monthly</strong>
+            </div>
+          </div>
+
+          <!-- Best Seller Details -->
+          <article class="best-seller-info">
+            <div class="badge-label">Patron's Unanimous Choice</div>
+            <h2 class="best-seller-title" id="best-seller-heading">Classic Beef Burger</h2>
+            <div class="best-seller-price-tag">
+              <span class="currency">EGP</span>
+              <span class="amount">150</span>
+              <span class="inclusive">inclusive of taxes</span>
+            </div>
+            <p class="best-seller-description">
+              Our crown jewel and undisputed crowd favorite. We start with a custom blend of prime Angus chuck and brisket, ground in-house every morning. Searing it on our volcanic stone grill locks in natural juices while imparting an irresistible smoky char.
+            </p>
+            <p class="best-seller-subtext">
+              Layered generously with 18-month aged sharp cheddar, slow-simmered balsamic sweet onions, vine-ripened tomatoes, and our secret smoked-paprika emulsion, all cradled inside a cloud-soft golden brioche bun. Served alongside twice-cooked sea salt fries and house pickle spear.
+            </p>
+            
+            <div class="best-seller-highlights">
+              <div class="highlight-box">
+                <span class="highlight-title">Prime Patty</span>
+                <span class="highlight-detail">200g Fresh Angus</span>
+              </div>
+              <div class="highlight-box">
+                <span class="highlight-title">Artisan Bun</span>
+                <span class="highlight-detail">Daily Baked Brioche</span>
+              </div>
+              <div class="highlight-box">
+                <span class="highlight-title">Accompaniment</span>
+                <span class="highlight-detail">Truffle Dip &amp; Fries</span>
+              </div>
+            </div>
+
+            <div class="best-seller-cta">
+              <a href="#menu" class="btn btn-primary">Order From Daily Menu</a>
+              <a href="#contact" class="btn btn-secondary">Reserve For Dinner</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         E. DAILY MENU SECTION
+         ========================================== -->
+    <section class="menu-section section-padding" id="menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Freshly Prepared Daily</span>
+          <h2 class="section-title" id="menu-heading">Daily Menu</h2>
+          <div class="title-divider"></div>
+          <p class="section-desc">
+            Simple, honest, and uncompromising quality. Explore our daily culinary selections priced transparently for an elevated dining experience.
+          </p>
+        </div>
+
+        <!-- Centered Semantic HTML Table with exactly two columns -->
+        <div class="table-container">
+          <table class="menu-table">
+            <caption class="sr-only">Eatery Daily Menu Items and Prices</caption>
+            <thead>
+              <tr>
+                <th scope="col" class="col-item">Item</th>
+                <th scope="col" class="col-price">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="menu-item-info">
+                    <strong class="item-name">Grilled Chicken Platter</strong>
+                    <span class="item-sub">Charbroiled herb chicken breast, saffron rice &amp; flame-roasted vegetables</span>
+                  </div>
+                </td>
+                <td class="price-cell">
+                  <span class="price-tag">EGP 180</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="menu-item-info">
+                    <strong class="item-name">Classic Beef Burger</strong>
+                    <span class="item-sub">200g prime Angus beef, aged cheddar, caramelized onion, brioche &amp; fries</span>
+                  </div>
+                </td>
+                <td class="price-cell">
+                  <span class="price-tag">EGP 150</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="menu-item-info">
+                    <strong class="item-name">Creamy Alfredo Pasta</strong>
+                    <span class="item-sub">Fresh bronze-die fettuccine, Parmigiano-Reggiano emulsion &amp; roasted garlic</span>
+                  </div>
+                </td>
+                <td class="price-cell">
+                  <span class="price-tag">EGP 135</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="menu-note">
+          <p>
+            * All menu prices are stated in Egyptian Pounds (EGP). Please inform your server of any dietary preferences or allergen sensitivities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         F. BOOKING AND FEEDBACK FORM SECTION
+         ========================================== -->
+    <section class="form-section section-padding" id="contact" aria-labelledby="form-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Connect With Eatery</span>
+          <h2 class="section-title" id="form-heading">Booking &amp; Feedback</h2>
+          <div class="title-divider"></div>
+          <p class="section-desc">
+            Whether you wish to reserve a table for a celebration or share your dining impressions, our hospitality team is eager to assist you.
+          </p>
+        </div>
+
+        <div class="form-wrapper">
+          <!-- Quick Info Cards -->
+          <div class="form-sidebar">
+            <div class="sidebar-card">
+              <div class="sidebar-icon">&#128347;</div>
+              <h3 class="sidebar-title">Opening Hours</h3>
+              <p>Monday &ndash; Thursday: 12:00 PM &ndash; 11:00 PM</p>
+              <p>Friday &ndash; Sunday: 1:00 PM &ndash; 12:00 AM</p>
+            </div>
+            <div class="sidebar-card">
+              <div class="sidebar-icon">&#128205;</div>
+              <h3 class="sidebar-title">Our Location</h3>
+              <p>15 Nile Corniche, Zamalek Island</p>
+              <p>Cairo, Egypt</p>
+            </div>
+            <div class="sidebar-card">
+              <div class="sidebar-icon">&#9742;</div>
+              <h3 class="sidebar-title">Direct Inquiries</h3>
+              <p>Phone: +20 (2) 2735-0000</p>
+              <p>Email: reservations@eatery-dining.com</p>
+            </div>
+          </div>
+
+          <!-- Professional Interactive Form -->
+          <div class="form-card">
+            <!-- Academic/Static Frontend Notice -->
+            <div class="static-notice" role="note">
+              <span class="notice-icon">&#9432;</span>
+              <div class="notice-text">
+                <strong>Static Frontend Demonstration:</strong>
+                <span>This form is part of a frontend academic assignment. Submissions are validated and simulated client-side without external server communication.</span>
+              </div>
+            </div>
+
+            <form class="contact-form" id="booking-feedback-form" action="#" method="post" novalidate>
+              <!-- Request Type Dropdown (Booking / Feedback) -->
+              <div class="form-group">
+                <label for="request-type" class="form-label">
+                  Request Type <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <div class="select-wrapper">
+                  <select id="request-type" name="request_type" class="form-control" required>
+                    <option value="" disabled selected>Please select a request type...</option>
+                    <option value="Booking">Table Booking</option>
+                    <option value="Feedback">Customer Feedback</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Full Name Input -->
+              <div class="form-group">
+                <label for="full-name" class="form-label">
+                  Full Name <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="full-name" 
+                  name="full_name" 
+                  class="form-control" 
+                  placeholder="e.g. Sarah Jenkins" 
+                  required 
+                  autocomplete="name"
+                >
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="email-address" class="form-label">
+                  Email Address <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="email-address" 
+                  name="email_address" 
+                  class="form-control" 
+                  placeholder="e.g. sarah@example.com" 
+                  required 
+                  autocomplete="email"
+                >
+              </div>
+
+              <!-- Message Textarea -->
+              <div class="form-group">
+                <label for="message-text" class="form-label">
+                  Your Message <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <textarea 
+                  id="message-text" 
+                  name="message_text" 
+                  class="form-control" 
+                  rows="5" 
+                  placeholder="For reservations: please mention preferred date, time &amp; guest count. For feedback: tell us about your experience..." 
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                  Submit Request
+                </button>
+              </div>
+
+              <!-- Live Submission Feedback Toast/Alert (Simulated via pure vanilla JS) -->
+              <div class="form-feedback-message" id="form-feedback" role="status" aria-live="polite" hidden></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       G. FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <!-- Footer Branding & Bio -->
+      <div class="footer-col footer-brand">
+        <a href="#home" class="brand-logo footer-logo" aria-label="Eatery Home">
+          <span class="logo-mark">E</span>
+          <div class="logo-text">
+            <span class="brand-name">Eatery</span>
+            <span class="brand-tagline">Artisanal Kitchen</span>
+          </div>
+        </a>
+        <p class="footer-bio">
+          Dedicated to celebrating honest flavors, impeccable culinary craftsmanship, and an elevated neighborhood dining experience since 2018.
+        </p>
+      </div>
+
+      <!-- Footer Quick Links -->
+      <div class="footer-col footer-links">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#top-meals">Top Meals</a></li>
+          <li><a href="#best-seller">Best Seller</a></li>
+          <li><a href="#menu">Daily Menu</a></li>
+          <li><a href="#contact">Reservations &amp; Feedback</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="footer-col footer-contact">
+        <h4 class="footer-heading">Visit &amp; Contact</h4>
+        <address class="footer-address">
+          <p><strong>Address:</strong> 15 Nile Corniche, Zamalek, Cairo, Egypt</p>
+          <p><strong>Telephone:</strong> <a href="tel:+20227350000">+20 2 2735 0000</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@eatery-dining.com">info@eatery-dining.com</a></p>
+          <p><strong>Hours:</strong> Open daily 12:00 PM &ndash; Midnight</p>
+        </address>
+      </div>
+
+      <!-- Social Media Icons (Inline SVG) -->
+      <div class="footer-col footer-social">
+        <h4 class="footer-heading">Connect With Us</h4>
+        <p class="social-tagline">Follow our culinary journey and seasonal daily specials:</p>
+        <div class="social-icons" aria-label="Social media links">
+          <!-- Facebook SVG -->
+          <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Eatery on Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+            </svg>
+          </a>
+          <!-- Instagram SVG -->
+          <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Eatery on Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <!-- Twitter / X SVG -->
+          <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Eatery on X (Twitter)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <!-- TripAdvisor SVG -->
+          <a href="https://tripadvisor.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Eatery on TripAdvisor">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 3.333c1.97 0 3.738.74 5.093 1.956l1.782-.934-.693 2.148c.528.847.818 1.84.818 2.897 0 3.018-2.433 5.467-5.433 5.595a4.707 4.707 0 0 1-1.567-.001C8.999 16.866 6.567 14.417 6.567 11.4c0-1.057.29-2.05.818-2.897l-.693-2.148 1.782.934A7.477 7.477 0 0 1 12 5.333zm-4.333 4.2c-1.03 0-1.867.837-1.867 1.867 0 1.03.837 1.867 1.867 1.867s1.866-.837 1.866-1.867c0-1.03-.836-1.867-1.866-1.867zm8.666 0c-1.03 0-1.866.837-1.866 1.867 0 1.03.836 1.867 1.866 1.867 1.03 0 1.867-.837 1.867-1.867 0-1.03-.837-1.867-1.867-1.867z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright and Academic Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p class="copyright-text">
+          &copy; 2026 <strong>Eatery Restaurant</strong>. All rights reserved. ICT 213 - Web Programming 1 - Assignment 1.
+        </p>
+        <p class="academic-note">
+          Designed with semantic HTML5 &amp; CSS3. Zero external frameworks or libraries.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       VANILLA JAVASCRIPT (Minimal & Pure)
+       - Mobile Hamburger Navigation Toggle
+       - Active Link Highlighting on Scroll
+       - Static Form Validation & Interactive Feedback
+       ========================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Mobile Menu Toggle
+      const navToggle = document.getElementById('mobile-nav-toggle');
+      const primaryNav = document.getElementById('primary-nav');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      if (navToggle && primaryNav) {
+        navToggle.addEventListener('click', () => {
+          const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+          navToggle.setAttribute('aria-expanded', !isExpanded);
+          primaryNav.classList.toggle('nav-open');
+        });
+
+        // Close mobile nav when clicking a link
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            navToggle.setAttribute('aria-expanded', 'false');
+            primaryNav.classList.remove('nav-open');
+          });
+        });
+      }
+
+      // 2. Active Navigation Link on Scroll
+      const sections = document.querySelectorAll('section[id]');
+      const handleScrollSpy = () => {
+        const scrollPosition = window.scrollY + 140;
+
+        sections.forEach(section => {
+          const top = section.offsetTop;
+          const height = section.offsetHeight;
+          const id = section.getAttribute('id');
+          
+          if (scrollPosition >= top && scrollPosition < top + height) {
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      };
+      window.addEventListener('scroll', handleScrollSpy, { passive: true });
+
+      // 3. Static Form Validation & Friendly Client-Side Confirmation
+      const form = document.getElementById('booking-feedback-form');
+      const feedbackMessage = document.getElementById('form-feedback');
+      const submitBtn = document.getElementById('form-submit-btn');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const name = document.getElementById('full-name').value.trim();
+          const email = document.getElementById('email-address').value.trim();
+          const requestType = document.getElementById('request-type').value;
+          const message = document.getElementById('message-text').value.trim();
+
+          // Validate fields
+          if (!name || !email || !requestType || !message) {
+            feedbackMessage.className = 'form-feedback-message error';
+            feedbackMessage.innerHTML = '<strong>Please fill in all required fields</strong> before submitting.';
+            feedbackMessage.hidden = false;
+            return;
+          }
+
+          // Basic email format check
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(email)) {
+            feedbackMessage.className = 'form-feedback-message error';
+            feedbackMessage.innerHTML = '<strong>Invalid email address:</strong> Please enter a valid email.';
+            feedbackMessage.hidden = false;
+            return;
+          }
+
+          // Simulate processing state
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Processing...';
+
+          setTimeout(() => {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Submit Request';
+            feedbackMessage.className = 'form-feedback-message success';
+            feedbackMessage.innerHTML = `
+              <strong>Thank you, ${name}!</strong>
+              <p>Your ${requestType.toLowerCase()} request has been simulated successfully. In a production environment with a backend, our staff would contact you at <em>${email}</em>.</p>
+            `;
+            feedbackMessage.hidden = false;
+            form.reset();
+          }, 600);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
